@@ -1,0 +1,21 @@
+.profile-container{
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+.leftBio{
+    width: 50%;
+}
+.rightDP{
+    flex: 1;
+    border: 2px solid red;
+    padding: 10px;
+    width: 50%;
+}
+.profile-icons{
+    margin-right: 20px;
+
+}
+.profile-icons:hover{
+   color: teal;
+}

@@ -1,8 +1,11 @@
-import './skills.style.css'
+import './skills.style.css' ;
+import {SiExpress} from 'react-icons/si'
+import {AiFillHtml5} from 'react-icons/ai'
 const Skills = () =>{
 const skills = [
     {
         image:'https://cdn-icons-png.flaticon.com/512/732/732212.png?w=360',
+        icon:true,
         tag:'HTML'
     },
     {
@@ -27,18 +30,20 @@ const skills = [
     },
     {
         image:'https://www.freelogovectors.net/wp-content/uploads/2022/01/express-logo-freelogovectors.net_.png',
+        icon:true,
+        iconC:<SiExpress/>,
         tag:'ExpressJS'
     },
     {
         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png',
         tag:'MongoDB'
     },
+    // {
+    //     image:'https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png',
+    //     tag:'Git Hub'
+    // },
     {
-        image:'https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png',
-        tag:'Git Hub'
-    },
-    {
-        image:'https://e7.pngegg.com/pngimages/125/653/png-clipart-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle.png',
+        image:'https://w7.pngwing.com/pngs/125/653/png-transparent-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle-computer-science.png',
         tag:'DS & Algo'
     }
     
@@ -59,11 +64,23 @@ const skills = [
         </div>
     )
 }
-const SkillsCard= ( {i,link , tag}) =>{
+const SkillsCard= ( {i,link , tag ,  icon ,iconC}) =>{
     // console.log(props);
+    let picture ; 
+    if(icon){
+        picture =  <SiExpress/>
+
+    }else{
+        picture = <img src={link} alt={tag}/>
+    }
     return(
         <div className={`card card${i}`}>
-            <img src={link} alt={tag}  />
+            
+            {
+                icon ?iconC :<img src={link} alt={tag}  />
+                // iconC
+            }
+            
             <p>{tag}</p>
         </div>
     )

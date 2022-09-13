@@ -1,13 +1,12 @@
 .n-wrapper{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
     border-bottom: 2px solid rgba(62, 59, 59, 0.697);
 }
-.n-leftSide{
+/* .n-leftSide{
     flex: 1;
-    /* height: 120px; */
-}
+} */
 .logo{
     overflow: hidden;
 }
@@ -20,13 +19,14 @@
 }
 .n-list >ul{
     display: flex;
+    gap: 1rem;
     justify-content: space-evenly;
     list-style: none;
 }
 .n-list>ul>li{
     font: 500 20px sans-serif ;
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 5px 1rem;
     border-radius: 20px;
 }
 .n-list>ul>li:hover{
