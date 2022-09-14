@@ -51,6 +51,7 @@ const skills = [
 
 
     return (
+        
         <div className="skills_sections">
             <p>Skills</p>
             <div className="cards">

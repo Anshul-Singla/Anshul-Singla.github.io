@@ -32,19 +32,30 @@
 }
 .card:hover{
     
-    animation: shake 500ms  ease-in-out;
-    /* transform: translateY(10px);*/
+    /* animation: shake 500ms  ease-in-out; */
+    transform: translateY(5px);
     background-color: white; 
 }
 .card>img{
-    width: 60%;
-    height: 50%;
+    width: 90%;
+    /* height: 50%; */
+    transition: all 500ms ease-in-out;
+}
+.card:hover img{
+    width: 65%;
 }
 .card>p{
-    font: 500 20px sans-serif;
+    font: 500 25px sans-serif;
+    /* opacity: 0; */
+    display: none;
+    transition: all 500ms ease-in;
+}
+.card:hover p{
+   /* opacity: 1; */
+   display: block;
 }
 .card3>img{
-    border-radius: 20px;
+    border-radius: 5px;
 }
 @keyframes shake {
         0% { transform: translateX(0) }
