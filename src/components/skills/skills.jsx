@@ -51,8 +51,8 @@ const skills = [
 
 
     return (
-        
-        <div className="skills_sections">
+
+        <div className="skills_sections skillsbg">
             <p>Skills</p>
             <div className="cards">
                 {
