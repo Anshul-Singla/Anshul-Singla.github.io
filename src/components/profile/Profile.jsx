@@ -20,6 +20,7 @@ const ProfileComponent = ()=>{
                     }} > 
                         Resume
                     </div>
+                    <a href="" download='' ></a>
                     <div>
                         <IconContext.Provider value={{className:'git-icon'}}>
                             <AiFillGithub size='3rem' onClick={()=>{

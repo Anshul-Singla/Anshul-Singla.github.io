@@ -48,6 +48,7 @@ const tools = [
             <div className="cards">
                 {
                     tools.map( (tool , i )=>(
+                        
                         <ToolsCard i={i+1} link={tool.image} tag={tool.tag} />
 
                     ))
@@ -59,7 +60,7 @@ const tools = [
 const ToolsCard= ( {i,link , tag ,  icon ,iconC}) =>{
 
     return(
-        <div className={`card card${i}`}>
+        <div className={`card card${i} tool`}>
             
             {
                 icon ?iconC :<img src={link} alt={tag}  />
