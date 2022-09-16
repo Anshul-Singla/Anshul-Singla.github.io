@@ -4,30 +4,3 @@
 .card7>p{
     font:500 20px sans-serif;
 }
-.tool{
-    position: relative;
-}
-.tool::before,
-.tool::after {
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border: inherit;
-        transition: all 0.5s ease-in;
-      }
-      .tool::before {
-        top: -15px;
-        left: -15px;
-        border-width: 3px 0 0 3px;
-      }
-      .tool::after {
-        bottom: -15px;
-        right: -15px;
-        border-width: 0 3px 3px 0;
-      }
-      .tool:hover::after,
-      .tool:hover::before {
-        width: calc(100% + 27px);
-        height: calc(100% + 27px);
-      }

@@ -1,42 +1,53 @@
 import './skills.style.css' ;
 import {SiExpress} from 'react-icons/si'
 import {AiFillHtml5} from 'react-icons/ai'
+import Aos from 'aos'
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Skills = () =>{
+    useEffect(()=>{
+        Aos.init({duration:1500 })
+    })
 const skills = [
     {
         image:'https://cdn-icons-png.flaticon.com/512/732/732212.png?w=360',
-        icon:true,
-        tag:'HTML'
+        tag:'HTML',
+        animation:"flip-right",
     },
     {
         image:'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png',
-        tag:'CSS'
+        tag:'CSS',
+        animation:"flip-right",
     },
     {
         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png',
-        tag:'Java Script'
+        tag:'Java Script',
+        animation:"flip-right",
     },
     {
         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-        tag:'React'
+        tag:'React',
+        animation:"flip-right",
     },
     {
         image:'https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png',
-        tag:'Redux'
+        tag:'Redux',
+        animation:"flip-right",
     },
     {
         image:'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png',
-        tag:'NodeJS'
+        tag:'NodeJS',
+        animation:"flip-right",
     },
     {
         image:'https://www.freelogovectors.net/wp-content/uploads/2022/01/express-logo-freelogovectors.net_.png',
-        icon:true,
-        iconC:<SiExpress/>,
-        tag:'ExpressJS'
+        tag:'ExpressJS',
+        animation:"flip-right",
     },
     {
         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png',
-        tag:'MongoDB'
+        tag:'MongoDB',
+        animation:"flip-right",
     },
     // {
     //     image:'https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png',
@@ -44,7 +55,8 @@ const skills = [
     // },
     {
         image:'https://w7.pngwing.com/pngs/125/653/png-transparent-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle-computer-science.png',
-        tag:'DS & Algo'
+        tag:'DS & Algo',
+        animation:"flip-right",
     }
     
 ]
@@ -57,7 +69,7 @@ const skills = [
             <div className="cards">
                 {
                     skills.map((skill , i) =>(
-                            <SkillsCard i={i+1} link={skill.image} tag={skill.tag} />
+                            <SkillsCard i={i+1} link={skill.image} tag={skill.tag} animation={skill.animation} />
                     )
                     )
                 }
@@ -65,7 +77,7 @@ const skills = [
         </div>
     )
 }
-const SkillsCard= ( {i,link , tag ,  icon ,iconC}) =>{
+const SkillsCard= ( {i,link , tag ,  icon ,iconC , animation}) =>{
     // console.log(props);
     let picture ; 
     if(icon){
@@ -75,7 +87,7 @@ const SkillsCard= ( {i,link , tag ,  icon ,iconC}) =>{
         picture = <img src={link} alt={tag}/>
     }
     return(
-        <div className={`card card${i}`}>
+        <div data-aos={`${animation}`} className={`card card${i}`}>
             
             {
                 icon ?iconC :<img src={link} alt={tag}  />

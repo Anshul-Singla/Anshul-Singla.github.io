@@ -12,10 +12,8 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
 }
-/* .n-leftSide{
-    flex: 1;
-} */
 .logo{
     overflow: hidden;
 }

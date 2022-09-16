@@ -1,5 +1,12 @@
 import './tools.style.css' ;
+import Aos from 'aos'
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 const Tools = () =>{
+    useEffect(()=>{
+        Aos.init({duration:1500 })
+    })
 const tools = [
     {
         image:'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
@@ -60,7 +67,7 @@ const tools = [
 const ToolsCard= ( {i,link , tag ,  icon ,iconC}) =>{
 
     return(
-        <div className={`card card${i} tool`}>
+        <div data-aos='flip-left' data-aos-anchor-placement='center-center' className={`card card${i} `}>
             
             {
                 icon ?iconC :<img src={link} alt={tag}  />
