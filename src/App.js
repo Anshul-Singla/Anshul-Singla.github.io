@@ -6,6 +6,7 @@ import ProfileComponent from './components/profile/Profile';
 import About from './components/about/About';
 import Tools from './components/tools/Tools';
 import Contact from './components/contact/Contact';
+import Projects from './components/project/Projects';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Skills/>
       <Tools/>
       <Contact/>
+      <Projects/>
     </div>
   );
 }
