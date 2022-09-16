@@ -54,14 +54,14 @@ const Projects = () => {
     <div className="p-wrapper" >
       LIFE IS AWESOME....
       {
-        projects.map(el =>
-          <ProjectCard key={el.title} poster_url={el.poster_url} name={el.name} description={el.description} tech_stack={el.tech_stack} animation={el.animation} git_link={el.git_link} deploy_link={el.deploy_link}  />
+        projects.map((el,i )=>
+          <ProjectCard key={el.title} i={i+1} poster_url={el.poster_url} name={el.name} description={el.description} tech_stack={el.tech_stack} animation={el.animation} git_link={el.git_link} deploy_link={el.deploy_link}  />
         )
       }
     </div>
   )
 }
-const ProjectCard = ({poster_url,name,description,tech_stack ,git_link, deploy_link,animation})=>{
+const ProjectCard = ({poster_url,i,name,description,tech_stack ,git_link, deploy_link,animation})=>{
   const handleGit = (link) =>{
     window.open(link)
   }
@@ -69,8 +69,8 @@ const ProjectCard = ({poster_url,name,description,tech_stack ,git_link, deploy_l
     window.open(link)
   }
   return (
-    <div data-aos={`${animation}`} className='project'>
-      <div className="poster">
+    <div data-aos={`${animation}`} className={`project project${i}`} >
+      <div className="poster"  >
         <img src={poster_url} alt={name} />
       </div>
       <div className="projectDetail">

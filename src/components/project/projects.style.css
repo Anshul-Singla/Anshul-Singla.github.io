@@ -20,6 +20,9 @@
     gap: 20px;
     /* text-align: center; */
 }
+.project2{
+    flex-direction: row-reverse;
+}
 .poster{
     /* border:1px solid; */
     border-radius: 10px;
