@@ -52,7 +52,6 @@ const Projects = () => {
   ]
   return (
     <div className="p-wrapper" >
-      LIFE IS AWESOME....
       {
         projects.map((el,i )=>
           <ProjectCard key={el.title} i={i+1} poster_url={el.poster_url} name={el.name} description={el.description} tech_stack={el.tech_stack} animation={el.animation} git_link={el.git_link} deploy_link={el.deploy_link}  />
