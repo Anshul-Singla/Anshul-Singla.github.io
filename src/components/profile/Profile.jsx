@@ -20,20 +20,20 @@ const ProfileComponent = ()=>{
                     }} > 
                         Resume
                     </div>
-                    <a href="" download='' ></a>
+                    {/* <a href="" download='' ></a> */}
                     <div>
                         <IconContext.Provider value={{className:'git-icon'}}>
-                            <AiFillGithub size='3rem' onClick={()=>{
+                            <AiFillGithub size='2rem' onClick={()=>{
                                 window.open('https://github.com/Anshul-Singla')
                             }} />
                         </IconContext.Provider>
                         <IconContext.Provider value={{className:'linkedin-icon'}}>
-                            <AiFillLinkedin size='3rem' onClick={()=>{
+                            <AiFillLinkedin size='2rem' onClick={()=>{
                                 window.open('https://www.linkedin.com/in/anshul1998/')
                             }} />
                         </IconContext.Provider>
                         <IconContext.Provider value={{className:'gmail-icon'}}>
-                            <SiGmail size='3rem' onClick={()=>{
+                            <SiGmail size='2rem' onClick={()=>{
                                 window.open('https://mail.google.com/mail/u/2/#inbox')
                             }} />
                         </IconContext.Provider>
