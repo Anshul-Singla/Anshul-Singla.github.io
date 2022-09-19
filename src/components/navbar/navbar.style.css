@@ -14,9 +14,6 @@
     left: 0;
     z-index: 100;
 }
-.logo{
-    overflow: hidden;
-}
 .logo>img{
     width: 90px;
     /* border: 2px dashed green; */
@@ -39,5 +36,17 @@
 .n-list>ul>li:hover{
     background-color: rgba(0, 128, 128, 0.689);
     color: #fff;
-    box-shadow: 0 1px 7px 10px teal;
+    /* box-shadow: 0 1px 7px 10px teal; */
+}
+/* --hamburger-- */
+.hamburger{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    .n-list{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
 }

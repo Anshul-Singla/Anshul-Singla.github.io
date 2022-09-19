@@ -32,7 +32,7 @@ const Contact = () => {
                         <p>+91 9821138871</p>
                     </div>
                 </div>
-                <div className="contact_right">
+                {/* <div className="contact_right">
                     <form action="">
                         <fieldset>
                             <legend>Email</legend>
@@ -49,7 +49,7 @@ const Contact = () => {
                         <input type="submit" value='Submit'  />
                     </form>
 
-                </div>
+                </div> */}
             </div>
             
         </div>

@@ -30,7 +30,7 @@ const skills = [
         animation:"flip-right",
     },
     {
-        image:'https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png',
+        image:'https://upload.wikimedia.org/wikipedia/commons/3/30/Redux_Logo.png',
         tag:'Redux',
         animation:"flip-right",
     },

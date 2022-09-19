@@ -1,5 +1,6 @@
 import logo from './logo1.jpg';
-import './navbar.style.css'
+import './navbar.style.css';
+import {GiHamburgerMenu} from 'react-icons/gi';
  const Navbar =()=>{
     return(
         <div className="n-wrapper">
@@ -18,6 +19,9 @@ import './navbar.style.css'
                         <li>Contact</li>
                     </ul>
                 </div>
+            </div>
+            <div className='hamburger'>
+             <GiHamburgerMenu/>
             </div>
         </div>
     )
