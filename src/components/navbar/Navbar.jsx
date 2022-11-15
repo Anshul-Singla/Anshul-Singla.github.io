@@ -17,6 +17,13 @@ import {GiHamburgerMenu} from 'react-icons/gi';
                         <li>Skills</li>
                         <li>Projects</li>
                         <li>Contact</li>
+                        <li>
+                        <div className='resume' onClick={()=>{
+                        window.open('https://drive.google.com/file/d/1JAMfb0zIpr2kMlOWdT6XQGnRALyNjaIB/view?usp=sharing')
+                    }} > <a href="Anshul-Singla-Resume.pdf" download>Resume</a>
+                        
+                    </div>
+                        </li>
                     </ul>
                 </div>
             </div>
