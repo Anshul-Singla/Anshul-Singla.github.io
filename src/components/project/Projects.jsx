@@ -68,7 +68,7 @@ const ProjectCard = ({poster_url,i,name,description,tech_stack ,git_link, deploy
     window.open(link)
   }
   return (
-    <div data-aos={`${animation}`} className={`project project${i}`} >
+    <div data-aos={`${animation}`} className={`project project${i}`} id='project'>
       <div className="poster"  >
         <img src={poster_url} alt={name} />
       </div>

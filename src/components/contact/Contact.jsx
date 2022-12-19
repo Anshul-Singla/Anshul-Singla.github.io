@@ -6,7 +6,7 @@ import './contact.style.css';
 
 const Contact = () => {
     return (
-        <div className="c-wrapper">
+        <div className="c-wrapper" id='contact'>
                 <p className='c-caption'>My inbox is always open, whether you have a question <p> or </p> just want to know me or even just to say hi... </p>
             <div className="c-container">
                 <div className="contact_left">

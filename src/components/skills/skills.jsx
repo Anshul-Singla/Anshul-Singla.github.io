@@ -64,7 +64,7 @@ const skills = [
 
     return (
 
-        <div className="skills_sections skillsbg">
+        <div className="skills_sections skillsbg" id='skills'>
             <p>Skills</p>
             <div className="cards">
                 {

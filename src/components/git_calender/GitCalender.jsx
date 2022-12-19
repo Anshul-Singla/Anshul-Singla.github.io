@@ -41,10 +41,6 @@ export default function Gitstats() {
                     <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anshul-Singla&theme=indian-flag"
                         alt="Github Contributions" />
                 </div>
-                <div class="github-stat">
-                    <img src="https://activity-graph.herokuapp.com/graph?username=Anshul-Singla&bg_color=ffffff&color=000080&line=138808&point=ff9933&area=true"
-                        alt="Github Graph" />
-                </div>
                 <div style={style}>
                     <p 
                     // className={styles.title}

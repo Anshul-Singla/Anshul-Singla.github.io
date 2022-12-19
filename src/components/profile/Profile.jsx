@@ -7,7 +7,7 @@ import Typist from 'react-typist';
 const ProfileComponent = ()=>{
     
     return (
-        <div className="profile-wrapper">
+        <div className="profile-wrapper" id='home'>
             <div className="profile-container">
                 <div className="leftBio">
                     <h1>Hi <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/waving-hand_1f44b.png"/> </h1>
