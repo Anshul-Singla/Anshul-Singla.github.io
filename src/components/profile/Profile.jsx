@@ -18,7 +18,9 @@ const ProfileComponent = ()=>{
                     <p>An enthusiastic Full Stack Web Developer with a strong set of technical as well as non-technical skills and a dedication towards creating useful and interactive web applications.</p>
                     <div className='resume' onClick={()=>{
                         window.open('https://drive.google.com/file/d/1JAMfb0zIpr2kMlOWdT6XQGnRALyNjaIB/view?usp=sharing')
-                    }} > <a href="Anshul-Singla-Resume.pdf" download>Resume</a>
+                    }} >
+                        <img src="https://hotemoji.com/images/dl/d/pointing-finger-emoji-by-google.png" alt="" />
+                        <a href="Anshul-Singla-Resume.pdf" download>Resume</a>
                         
                     </div>
                     {/* <a href="" download='' ></a> */}
