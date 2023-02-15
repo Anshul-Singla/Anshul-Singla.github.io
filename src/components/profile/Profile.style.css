@@ -18,12 +18,12 @@
 .leftBio>h1>img{
     width: 70px;
     margin-left: 20px;
-    animation-name: handwave; 
+/*  animation-name: handwave;  
     animation-timing-function: ease-in-out;
-  animation-duration:500ms;        
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%;      
-  display: inline-block;
+    animation-duration:500ms;        
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;       */
+    display: inline-block;
 }
 
 .leftBio>p{
